@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "author": "The Bin - Hack Club",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard",
+      "id": "bb1",
+      "top": 43.4,
+      "left": -274.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "wokwi-buzzer-0",
+      "top": 400.5,
+      "left": 42.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "wokwi-pushbutton-0",
+      "top": 323,
+      "left": -192,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "wokwi-analog-joystick-0",
+      "top": -202.2,
+      "left": 235.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "wokwi-slide-potentiometer-0",
+      "top": 182.6,
+      "left": 244.2,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "board-ssd1306-0",
+      "top": -150.46,
+      "left": -210.97,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "wokwi-rgb-led-0",
+      "top": -53.6,
+      "left": 221.9,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-arduino-mega",
+      "id": "mega1",
+      "top": -20.8,
+      "left": -540.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 33.6,
+      "left": 47.45,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 148.8,
+      "left": 47.45,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-led-bar-graph",
+      "id": "bargraph1",
+      "top": 43.2,
+      "left": -177.6,
+      "attrs": { "color": "lime" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 42.35,
+      "left": -144,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 61.55,
+      "left": -144,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r5",
+      "top": 71.15,
+      "left": -144,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r6",
+      "top": -257.23,
+      "left": -530.25,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r7",
+      "top": -257.23,
+      "left": -530.25,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r8",
+      "top": 128.75,
+      "left": -144,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r9",
+      "top": 80.75,
+      "left": -144,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r10",
+      "top": 99.95,
+      "left": -144,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "mega1:GND.2", "bb1:bn.1", "black", [ "h-53.97", "v-201.98", "h345.6", "v-76.8" ] ],
+    [ "mega1:5V.1", "bb1:bp.1", "red", [ "v-4.73", "h47.93", "v-432", "h124.8" ] ],
+    [ "board-ssd1306-0:SCL", "mega1:SCL", "white", [ "v0", "h-105.3" ] ],
+    [ "board-ssd1306-0:SDA", "mega1:SDA", "white", [ "v-9.6", "h-115.13", "v67.2" ] ],
+    [ "board-ssd1306-0:GND", "bb1:4b.j", "black", [ "v-134.4", "h105.6", "v-28.8" ] ],
+    [ "bb1:bn.2", "bb1:4b.i", "black", [ "h0" ] ],
+    [ "bb1:bp.2", "bb1:1b.j", "red", [ "h10.5", "v-29.6" ] ],
+    [ "board-ssd1306-0:VCC", "bb1:1b.f", "red", [ "v-230.4", "h67.35" ] ],
+    [
+      "wokwi-analog-joystick-0:GND",
+      "bb1:5b.f",
+      "black",
+      [ "v9.6", "h48", "v-144", "h-172.8", "v96" ]
+    ],
+    [ "bb1:bn.3", "bb1:5b.j", "black", [ "h0" ] ],
+    [ "bb1:bp.6", "bb1:9b.j", "red", [ "h0" ] ],
+    [ "wokwi-analog-joystick-0:VCC", "bb1:9b.f", "red", [ "v9.6", "h-38.4", "v-38.4" ] ],
+    [ "bb1:bn.50", "bb1:62b.j", "black", [ "h0" ] ],
+    [ "bb1:bp.49", "bb1:63b.j", "red", [ "h0.9", "v37.6" ] ],
+    [ "bb1:bn.7", "bb1:tn.1", "black", [ "h-17.9", "v-125.6", "h28.8" ] ],
+    [ "bb1:bp.7", "bb1:tp.1", "red", [ "h10.5", "v8.8", "h-48", "v-153.6", "h230.4" ] ],
+    [ "wokwi-rgb-led-0:R", "bb1:18t.c", "green", [ "v0" ] ],
+    [ "wokwi-rgb-led-0:COM", "bb1:13t.a", "green", [ "v-58", "h-47.9" ] ],
+    [ "bb1:tn.10", "bb1:13t.b", "green", [ "h-19.1", "v-10.4" ] ],
+    [ "wokwi-rgb-led-0:G", "bb1:30t.c", "green", [ "v0" ] ],
+    [ "wokwi-slide-potentiometer-0:GND", "bb1:45t.a", "black", [ "v0" ] ],
+    [ "bb1:tn.35", "bb1:45t.b", "green", [ "h-38.3", "v18.4" ] ],
+    [ "wokwi-slide-potentiometer-0:VCC", "bb1:41t.a", "red", [ "h-28.8", "v-86.4" ] ],
+    [ "bb1:tp.32", "bb1:41t.b", "red", [ "h0" ] ],
+    [ "bargraph1:A10", "mega1:2", "green", [ "h0" ] ],
+    [ "bargraph1:A9", "mega1:3", "green", [ "h0" ] ],
+    [ "bargraph1:A8", "mega1:4", "green", [ "h0" ] ],
+    [ "bargraph1:A7", "mega1:5", "cyan", [ "h0" ] ],
+    [ "bargraph1:A6", "mega1:6", "green", [ "h0" ] ],
+    [ "bargraph1:A5", "mega1:7", "green", [ "h0" ] ],
+    [ "bargraph1:A4", "mega1:8", "green", [ "h0" ] ],
+    [ "bargraph1:A3", "mega1:9", "green", [ "h-86.4", "v-9.6" ] ],
+    [ "bargraph1:A2", "mega1:10", "green", [ "h0" ] ],
+    [ "bargraph1:A1", "mega1:11", "green", [ "h0" ] ],
+    [ "wokwi-buzzer-0:1", "bb1:62b.f", "", [ "$bb" ] ],
+    [ "wokwi-buzzer-0:2", "bb1:63b.f", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:18t.d", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:24t.d", "", [ "$bb" ] ],
+    [ "r2:1", "bb1:30t.d", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:36t.d", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
