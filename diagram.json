@@ -22,8 +22,8 @@
     {
       "type": "wokwi-pushbutton",
       "id": "wokwi-pushbutton-0",
-      "top": 323,
-      "left": -192,
+      "top": 35,
+      "left": -124.8,
       "attrs": {}
     },
     {
@@ -59,7 +59,7 @@
       "type": "wokwi-arduino-mega",
       "id": "mega1",
       "top": -20.8,
-      "left": -540.2,
+      "left": -713,
       "rotate": 90,
       "attrs": {}
     },
@@ -82,66 +82,81 @@
     {
       "type": "wokwi-led-bar-graph",
       "id": "bargraph1",
-      "top": 43.2,
-      "left": -177.6,
+      "top": 52.8,
+      "left": -273.6,
       "attrs": { "color": "lime" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r3",
-      "top": 42.35,
-      "left": -144,
+      "top": 51.95,
+      "left": -240,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r4",
-      "top": 61.55,
-      "left": -144,
+      "top": 71.15,
+      "left": -240,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r5",
-      "top": 71.15,
-      "left": -144,
+      "top": 80.75,
+      "left": -240,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r6",
-      "top": -257.23,
-      "left": -530.25,
+      "top": 61.55,
+      "left": -240,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r7",
-      "top": -257.23,
-      "left": -530.25,
+      "top": 128.75,
+      "left": -240,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r8",
-      "top": 128.75,
-      "left": -144,
+      "top": 138.35,
+      "left": -240,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r9",
-      "top": 80.75,
-      "left": -144,
+      "top": 90.35,
+      "left": -240,
       "attrs": { "value": "1000" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r10",
-      "top": 99.95,
-      "left": -144,
+      "top": 109.55,
+      "left": -240,
       "attrs": { "value": "1000" }
-    }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r11",
+      "top": 119.15,
+      "left": -240,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r12",
+      "top": 99.95,
+      "left": -240,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-arduino-uno", "id": "uno1", "top": -1736.43, "left": -1694.02, "attrs": {} }
   ],
   "connections": [
     [ "mega1:GND.2", "bb1:bn.1", "black", [ "h-53.97", "v-201.98", "h345.6", "v-76.8" ] ],
@@ -188,7 +203,20 @@
     [ "r1:1", "bb1:18t.d", "", [ "$bb" ] ],
     [ "r1:2", "bb1:24t.d", "", [ "$bb" ] ],
     [ "r2:1", "bb1:30t.d", "", [ "$bb" ] ],
-    [ "r2:2", "bb1:36t.d", "", [ "$bb" ] ]
+    [ "r2:2", "bb1:36t.d", "", [ "$bb" ] ],
+    [ "r3:2", "mega1:GND.1", "black", [ "v0" ] ],
+    [ "r6:2", "mega1:GND.1", "black", [ "v-67.2", "h-20.4" ] ],
+    [ "r4:2", "mega1:GND.1", "black", [ "v-76.8", "h-10.8" ] ],
+    [ "r5:2", "mega1:GND.1", "black", [ "v-86.4", "h-10.8" ] ],
+    [ "r9:2", "mega1:GND.1", "green", [ "v-96", "h-1.2" ] ],
+    [ "r12:2", "mega1:GND.1", "black", [ "v0" ] ],
+    [ "r10:2", "mega1:GND.1", "black", [ "v0" ] ],
+    [ "r11:2", "mega1:GND.1", "black", [ "v-124.8", "h-10.8" ] ],
+    [ "r7:2", "mega1:GND.1", "black", [ "v0" ] ],
+    [ "r8:2", "mega1:GND.1", "black", [ "v0" ] ],
+    [ "bb1:bn.10", "bb1:13b.j", "green", [ "h49.3", "v-0.8" ] ],
+    [ "wokwi-pushbutton-0:1.l", "bb1:13b.h", "green", [ "h0", "v-76.8" ] ],
+    [ "wokwi-pushbutton-0:2.r", "mega1:23", "green", [ "h-105.4", "v230.6", "h-240" ] ]
   ],
   "dependencies": {}
 }
