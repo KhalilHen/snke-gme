@@ -1,11 +1,11 @@
-#Snake game#
+# Snake game #
 
-#What does it do#
+## What does it do ##
 
 Currently it doesn't work yet. But the goal is to be able to play the classic snake game through a  joystick.
 
 
-#How to use the project# 
+## How to use the project ##
 
 You can use it by visiting the woki link [Click here to open the project in wokiwi](https://wokwi.com/projects/406049930858861569)
 
